@@ -15,7 +15,7 @@ import (
 
 	_ "github.com/joho/godotenv/autoload"
 
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 )
 
 func main() {

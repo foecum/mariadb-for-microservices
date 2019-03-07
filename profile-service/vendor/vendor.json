@@ -1,0 +1,155 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"path": "appengine/cloudsql",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "VMh7Elbap4HldDHUBximmTxWqQY=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "cdb2f3857cfba7388d28dfe38316b0a39e694215",
+			"revisionTime": "2019-02-10T13:00:17Z"
+		},
+		{
+			"checksumSHA1": "eoK6z1yLptq6kXMukq0hHF3OgKg=",
+			"path": "github.com/bstaijen/mariadb-for-microservices/profile-service/app/http/controllers",
+			"revision": "f90f44b01c3f433801f9eee1dff9d41f84f611e5",
+			"revisionTime": "2018-02-22T17:53:34Z"
+		},
+		{
+			"checksumSHA1": "miYslbjpokhmOSaEGJem5+8sgXU=",
+			"path": "github.com/bstaijen/mariadb-for-microservices/profile-service/app/http/routes",
+			"revision": "f90f44b01c3f433801f9eee1dff9d41f84f611e5",
+			"revisionTime": "2018-02-22T17:53:34Z"
+		},
+		{
+			"checksumSHA1": "kU4L5/861hgq3YrE79xFQ7B0bas=",
+			"path": "github.com/bstaijen/mariadb-for-microservices/profile-service/app/models",
+			"revision": "f90f44b01c3f433801f9eee1dff9d41f84f611e5",
+			"revisionTime": "2018-02-22T17:53:34Z"
+		},
+		{
+			"checksumSHA1": "SfRSiOjvy0eIumea0E2L9jd3tJ0=",
+			"path": "github.com/bstaijen/mariadb-for-microservices/profile-service/config",
+			"revision": "f90f44b01c3f433801f9eee1dff9d41f84f611e5",
+			"revisionTime": "2018-02-22T17:53:34Z"
+		},
+		{
+			"checksumSHA1": "/6Qs96qZnHF4H+nUg59Yxo8m5Ww=",
+			"path": "github.com/bstaijen/mariadb-for-microservices/profile-service/database",
+			"revision": "f90f44b01c3f433801f9eee1dff9d41f84f611e5",
+			"revisionTime": "2018-02-22T17:53:34Z"
+		},
+		{
+			"checksumSHA1": "d7z+ooOz/0yvcZS1mErsrs2IMFM=",
+			"path": "github.com/bstaijen/mariadb-for-microservices/shared/models",
+			"revision": "f90f44b01c3f433801f9eee1dff9d41f84f611e5",
+			"revisionTime": "2018-02-22T17:53:34Z"
+		},
+		{
+			"checksumSHA1": "CJCaHcQOb6/0jGl33VJsD/9TE48=",
+			"path": "github.com/bstaijen/mariadb-for-microservices/shared/util",
+			"revision": "f90f44b01c3f433801f9eee1dff9d41f84f611e5",
+			"revisionTime": "2018-02-22T17:53:34Z"
+		},
+		{
+			"checksumSHA1": "cFgUy/MGOaf2hDoaZssZMKTKHxE=",
+			"path": "github.com/bstaijen/mariadb-for-microservices/shared/util/middleware",
+			"revision": "f90f44b01c3f433801f9eee1dff9d41f84f611e5",
+			"revisionTime": "2018-02-22T17:53:34Z"
+		},
+		{
+			"checksumSHA1": "blOHP3HPYU+IeV6yWCalQuuM+zE=",
+			"path": "github.com/dgrijalva/jwt-go",
+			"revision": "3af4c746e1c248ee8491a3e0c6f7a9cd831e95f8",
+			"revisionTime": "2018-09-21T17:23:15Z"
+		},
+		{
+			"checksumSHA1": "kfQRh4U4iBSTd0fWpilCK8HU2Hw=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "1b9eda25029c206f36637dde8e2acad26df99dab",
+			"revisionTime": "2019-01-27T01:11:11Z"
+		},
+		{
+			"checksumSHA1": "5NQxGXStdEEDvT6IPRtJk7Qg+GQ=",
+			"path": "github.com/gorilla/mux",
+			"revision": "3d80bc801bb034e17cae38591335b3b1110f1c47",
+			"revisionTime": "2018-10-30T15:25:28Z"
+		},
+		{
+			"checksumSHA1": "wwEGs3bPrm/zZT0o9gkQ3cJsNu8=",
+			"path": "github.com/joho/godotenv",
+			"revision": "5c0e6c6ab1a0a9ef0a8822cba3a05d62f7dad941",
+			"revisionTime": "2019-02-04T04:41:09Z"
+		},
+		{
+			"checksumSHA1": "UE4lhbPYYWEhqHXQk24OA73m5+8=",
+			"path": "github.com/joho/godotenv/autoload",
+			"revision": "5c0e6c6ab1a0a9ef0a8822cba3a05d62f7dad941",
+			"revisionTime": "2019-02-04T04:41:09Z"
+		},
+		{
+			"checksumSHA1": "r6ZMyP/HsdeToXIxvgP3ntL6Bds=",
+			"path": "github.com/konsorten/go-windows-terminal-sequences",
+			"revision": "5c8c8bd35d3832f5d134ae1e1e375b69a4d25242",
+			"revisionTime": "2018-10-04T22:41:46Z"
+		},
+		{
+			"checksumSHA1": "FlemxyknQEXslaonBUpWs1YOB6w=",
+			"path": "github.com/meatballhat/negroni-logrus",
+			"revision": "31067281800f66f57548a7a32d9c6c5f963fef83",
+			"revisionTime": "2017-08-01T19:50:57Z"
+		},
+		{
+			"checksumSHA1": "xTmkE7bYrgO9gXGRDPIba8A5M/U=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "cdb2f3857cfba7388d28dfe38316b0a39e694215",
+			"revisionTime": "2019-02-10T13:00:17Z"
+		},
+		{
+			"checksumSHA1": "gPCZ95WGIe+cjePArmS6i7CJ34g=",
+			"path": "github.com/urfave/negroni",
+			"revision": "390728d3c6ab037195ad3ac12daaa0304b0e681a",
+			"revisionTime": "2019-01-17T21:41:14Z"
+		},
+		{
+			"checksumSHA1": "oCH3J96RWvO8W4xjix47PModpio=",
+			"path": "golang.org/x/crypto/bcrypt",
+			"revision": "74369b46fc6756741c016591724fd1cb8e26845f",
+			"revisionTime": "2019-02-10T12:59:10Z"
+		},
+		{
+			"checksumSHA1": "oVPHWesOmZ02vLq2fglGvf+AMgk=",
+			"path": "golang.org/x/crypto/blowfish",
+			"revision": "74369b46fc6756741c016591724fd1cb8e26845f",
+			"revisionTime": "2019-02-10T12:59:10Z"
+		},
+		{
+			"checksumSHA1": "CVmt+DETeuUZkKC6MUJbTqc/iYU=",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "74369b46fc6756741c016591724fd1cb8e26845f",
+			"revisionTime": "2019-02-10T12:59:10Z"
+		},
+		{
+			"checksumSHA1": "a8iYhPjtQqoNL1lkLUeOZJUM5fA=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "3b5209105503162ded1863c307ac66fec31120dd",
+			"revisionTime": "2019-02-09T17:16:25Z"
+		},
+		{
+			"checksumSHA1": "IwB9A6UjgGYrHIBFJEamnrXPeNo=",
+			"path": "golang.org/x/sys/windows",
+			"revision": "3b5209105503162ded1863c307ac66fec31120dd",
+			"revisionTime": "2019-02-09T17:16:25Z"
+		},
+		{
+			"checksumSHA1": "LiyXfqOzaeQ8vgYZH3t2hUEdVTw=",
+			"path": "google.golang.org/appengine/cloudsql",
+			"revision": "99bc4335fe23898c0a61f5b35afabb6d11f29094",
+			"revisionTime": "2019-02-08T18:47:32Z"
+		}
+	],
+	"rootPath": "mariadb-for-microservices/profile-service"
+}

@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Sirupsen/logrus"
 	"github.com/bstaijen/mariadb-for-microservices/vote-service/config"
 	"github.com/bstaijen/mariadb-for-microservices/vote-service/database"
 	jwt "github.com/dgrijalva/jwt-go"
+	"github.com/sirupsen/logrus"
 	"github.com/urfave/negroni"
 
 	"fmt"

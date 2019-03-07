@@ -2,7 +2,7 @@ version: '3'
 
 services:
     webserver:
-        image: bstaijen/mariadb-microservice-webserver:demo
+        image: foecum/web-app:latest
         depends_on:
             - authentication
             - photo
@@ -23,9 +23,9 @@ services:
         labels:
         - "com.mariadb.host=webserver"
     authentication:
-        image: bstaijen/mariadb-microservice-authenticationsvc:demo
+        image: foecum/auth-svc:latest
         depends_on:
-          - db
+          - servicedb
         ports:
             - "5001:5001"
         restart: always 
@@ -33,7 +33,7 @@ services:
         - "PORT=5001"
         - "DB_USERNAME=profile_service"
         - "DB_PASSWORD=password"
-        - "DB_HOST=db"
+        - "DB_HOST=database"
         - "DB_PORT=3306"
         - "DB=ProfileService"
         - "SECRET_KEY=ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -41,9 +41,9 @@ services:
         labels:
         - "com.mariadb.host=authenticationsvc"
     photo:
-        image: bstaijen/mariadb-microservice-photosvc:demo
+        image: foecum/photo-svc:latest
         depends_on:
-          - db
+          - servicedb
         ports:
             - "5002:5002"
         restart: always 
@@ -54,7 +54,7 @@ services:
         - "PROFILE_SERVICE_URL=http://profile:5000/"
         - "DB_USERNAME=photo_service"
         - "DB_PASSWORD=password"
-        - "DB_HOST=db"
+        - "DB_HOST=database"
         - "DB_PORT=3306"
         - "DB=PhotoService"
         - "SECRET_KEY=ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -62,9 +62,9 @@ services:
         labels:
         - "com.mariadb.host=photosvc"
     vote:
-        image: bstaijen/mariadb-microservice-votesvc:demo
+        image: foecum/vote-svc:latest
         depends_on:
-          - db
+          - servicedb
         ports:
             - "5003:5003"
         restart: always
@@ -72,7 +72,7 @@ services:
         - "PORT=5003"
         - "DB_USERNAME=vote_service"
         - "DB_PASSWORD=password"
-        - "DB_HOST=db"
+        - "DB_HOST=database"
         - "DB_PORT=3306"
         - "DB=VoteService"
         - "SECRET_KEY=ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -81,9 +81,9 @@ services:
         labels:
         - "com.mariadb.host=votesvc"
     comment:
-        image: bstaijen/mariadb-microservice-commentsvc:demo
+        image: foecum/comment-svc:latest
         depends_on:
-          - db
+          - servicedb
         ports:
             - "5004:5004"
         restart: always
@@ -94,7 +94,7 @@ services:
         - "VOTE_SERVICE_URL=http://vote:5003/"
         - "DB_USERNAME=comment_service"
         - "DB_PASSWORD=password"
-        - "DB_HOST=db"
+        - "DB_HOST=database"
         - "DB_PORT=3306"
         - "DB=CommentService"
         - "SECRET_KEY=ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -102,9 +102,9 @@ services:
         labels:
         - "com.mariadb.host=commentsvc"
     profile:
-        image: bstaijen/mariadb-microservice-profilesvc:demo
+        image: foecum/profile-svc:latest
         depends_on:
-          - db
+          - servicedb
         ports:
             - "5000:5000"
         restart: always 
@@ -112,15 +112,15 @@ services:
         - "PORT=5000"
         - "DB_USERNAME=profile_service"
         - "DB_PASSWORD=password"
-        - "DB_HOST=db"
+        - "DB_HOST=database"
         - "DB_PORT=3306"
         - "DB=ProfileService"
         - "SECRET_KEY=ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         - "affinity:com.mariadb.host!=profilesvc"
         labels:
         - "com.mariadb.host=profilesvc"
-    db:
-        image: bstaijen/mariadb-microservice-database:sn
+    servicedb:
+        image: foecum/mariadb:latest
         environment:
         - "CLUSTER_NAME=galeracluster"
         - "DISCOVERY_SERVICE=192.168.99.164:2379"

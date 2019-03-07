@@ -11,19 +11,19 @@ CREATE TABLE IF NOT EXISTS VoteService.votes (user_id INT NOT NULL, photo_id INT
 
 CREATE TABLE IF NOT EXISTS CommentService.comments (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, user_id INT NOT NULL, photo_id INT NOT NULL,comment TEXT NOT NULL,createdAt timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, updatedAt timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);
 
-CREATE USER 'authentication_service'@'%' IDENTIFIED BY 'password';
+CREATE USER 'authentication_service' IDENTIFIED BY 'password';
 GRANT ALL ON ProfileService.* TO 'authentication_service'@'%';
 
-CREATE USER 'profile_service'@'%' IDENTIFIED BY 'password'; 
+CREATE USER 'profile_service' IDENTIFIED BY 'password';
 GRANT ALL ON ProfileService.* TO 'profile_service'@'%';
 
-CREATE USER 'comment_service'@'%' IDENTIFIED BY 'password';
+CREATE USER 'comment_service' IDENTIFIED BY 'password';
 GRANT ALL ON CommentService.* TO 'comment_service'@'%';
 
-CREATE USER 'photo_service'@'%' IDENTIFIED BY 'password';
+CREATE USER 'photo_service' IDENTIFIED BY 'password';
 GRANT ALL ON PhotoService.* TO 'photo_service'@'%';
 
-CREATE USER 'vote_service'@'%' IDENTIFIED BY 'password';
+CREATE USER 'vote_service' IDENTIFIED BY 'password';
 GRANT ALL ON VoteService.* TO 'vote_service'@'%';
 
 INSERT INTO ProfileService.users(`username`, `email`, `password`) VALUES ('bstaijen','bjorge.staijen@mariadb.com','$2a$10$1CSYrh6MYJdBoAnJMcQ22.sZ2QBfWL7VlfpQayOt8otdOa1Myjt7O');

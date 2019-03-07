@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Sirupsen/logrus"
 	"github.com/bstaijen/mariadb-for-microservices/photo-service/config"
 	"github.com/gorilla/mux"
+	"github.com/sirupsen/logrus"
 	"github.com/urfave/negroni"
 
 	"errors"

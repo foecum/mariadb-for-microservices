@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 
 	"github.com/bstaijen/mariadb-for-microservices/vote-service/app/http/routes"
 	"github.com/bstaijen/mariadb-for-microservices/vote-service/config"

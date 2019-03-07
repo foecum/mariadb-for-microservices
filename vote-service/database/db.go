@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"strconv"
 
-	log "github.com/Sirupsen/logrus"
 	sharedModels "github.com/bstaijen/mariadb-for-microservices/shared/models"
 	"github.com/bstaijen/mariadb-for-microservices/vote-service/config"
+	log "github.com/sirupsen/logrus"
 )
 
 // OpenConnection opens the connection to the database

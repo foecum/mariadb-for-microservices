@@ -17,12 +17,12 @@ import (
 
 	"strings"
 
-	"github.com/Sirupsen/logrus"
 	"github.com/bstaijen/mariadb-for-microservices/photo-service/config"
 	"github.com/bstaijen/mariadb-for-microservices/shared/helper"
 	sharedModels "github.com/bstaijen/mariadb-for-microservices/shared/models"
 	"github.com/bstaijen/mariadb-for-microservices/shared/util"
 	jwt "github.com/dgrijalva/jwt-go"
+	"github.com/sirupsen/logrus"
 )
 
 // IncomingHandler is the handler for serving the default photos timeline

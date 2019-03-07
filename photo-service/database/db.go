@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strconv"
 
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 
 	"github.com/bstaijen/mariadb-for-microservices/photo-service/app/models"
 	"github.com/bstaijen/mariadb-for-microservices/photo-service/config"
@@ -68,7 +68,7 @@ func GetPhotoByFilename(db *sql.DB, filename string) (*models.Photo, error) {
 	if len(photos) > 0 {
 		return photos[0], err
 	}
-	return nil, err 
+	return nil, err
 }
 
 // GetPhotoById returns a photo indexed by id

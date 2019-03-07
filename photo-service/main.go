@@ -13,8 +13,8 @@ import (
 	// go-sql-driver/mysql is needed for the database connection
 	_ "github.com/go-sql-driver/mysql"
 
-	log "github.com/Sirupsen/logrus"
 	_ "github.com/joho/godotenv/autoload"
+	log "github.com/sirupsen/logrus"
 )
 
 func main() {
